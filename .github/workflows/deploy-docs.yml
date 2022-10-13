@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: unbutu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
-      - name: Buid Storybook
+      - name: Build Storybook
         run: npm run build-storybook
 
       - name: Deploy Storybook
